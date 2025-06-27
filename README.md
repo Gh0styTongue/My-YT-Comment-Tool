@@ -55,7 +55,6 @@ You need to export your YouTube comment history before using this tool.
     ```bash
     python com.py
     ```
-    (Replace `com.py` with the actual name of the Python file).
 2.  **Select Your CSV Files:** Click the "Select CSV Files" button and choose the `comments.csv` file(s) you downloaded from Google Takeout.
 3.  **Start Processing:** Click the "Start Processing" button to begin fetching the data.
 4.  **View Results:** Watch the progress in the main window. Once complete, a new window will appear with your top comment statistics.
