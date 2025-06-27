@@ -40,7 +40,7 @@ You need to export your YouTube comment history before using this tool.
 
 1.  **Clone or Download this Repository:**
     ```bash
-    git clone [https://github.com/Gh0styTongue/My-YT-Comment-Tool.git](https://github.com/Gh0styTongue/My-YT-Comment-Tool.git)
+    git clone https://github.com/Gh0styTongue/My-YT-Comment-Tool.git
     cd My-YT-Comment-Tool
     ```
 2.  **Install Dependencies:**
