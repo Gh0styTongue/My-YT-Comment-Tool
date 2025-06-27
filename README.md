@@ -59,6 +59,25 @@ You need to export your YouTube comment history before using this tool.
 3.  **Start Processing:** Click the "Start Processing" button to begin fetching the data.
 4.  **View Results:** Watch the progress in the main window. Once complete, a new window will appear with your top comment statistics.
 
+### Generating Your Own API Key (Recommended)
+
+1.  **Go to the Google Cloud Console:** Navigate to the [Google Cloud Console](https://console.cloud.google.com/).
+2.  **Create a New Project:** If you don't have one already, create a new project from the project selection dropdown at the top of the page.
+3.  **Enable the API:**
+    -   In the navigation menu (☰), go to **APIs & Services > Library**.
+    -   In the search bar, type `YouTube Data API v3` and press Enter.
+    -   Click on **YouTube Data API v3** in the search results.
+    -   Click the **Enable** button.
+4.  **Create Credentials:**
+    -   In the navigation menu, go to **APIs & Services > Credentials**.
+    -   Click **+ CREATE CREDENTIALS** at the top of the page and select **API key**.
+    -   A new API key will be generated. Click the **copy** icon to copy it to your clipboard.
+5.  **Add the Key to the Script:**
+    -   Open the `com.py` script in a text editor.
+    -   Find the `process_files` function.
+    -   Locate the line `api_key = "AIzaSy..."` and replace the hardcoded key with the new one you just copied.
+    -   Save the file. You are now ready to run the tool with your personal API key.
+
 ---
 
 ## Disclaimer
@@ -66,4 +85,4 @@ You need to export your YouTube comment history before using this tool.
 This application uses a hardcoded API key for accessing the YouTube Data API. Please be aware of the following:
 
 -   **Quota Limits:** The YouTube Data API has a daily usage quota. Processing a very large number of comments may temporarily exhaust this quota.
--   **API Key Usage:** The provided API key is for demonstration purposes. For heavy use, it is recommended to generate and use your own key from the [Google Cloud Console](https://console.cloud.google.com/).
+-   **API Key Usage:** The provided API key is for demonstration purposes. For heavy use, it is highly recommended to generate and use your own key.
